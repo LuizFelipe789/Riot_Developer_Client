@@ -1,5 +1,5 @@
 defmodule RiotDeveloperClient.Account do
-  import RiotDeveloperClient.Client
+  import RiotDeveloperClient
 
   def get_account_data(name, tag_name) do
     url = "riot/account/v1/accounts/by-riot-id/#{name}/#{tag_name}"
