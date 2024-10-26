@@ -6,6 +6,7 @@ defmodule RiotDeveloperClient.MixProject do
       app: :riot_developer_client,
       version: "0.1.0",
       elixir: "~> 1.17",
+      elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -17,11 +18,14 @@ defmodule RiotDeveloperClient.MixProject do
     ]
   end
 
+  defp elixirc_paths(:test), do: ["test/support", "lib"]
+  defp elixirc_paths(_), do: ["lib"]
+
   defp deps do
     [
-      {:httpoison, "~> 2.2.1"},
       {:jason, "~> 1.4"},
-      {:tesla, "~> 1.12.1"}
+      {:tesla, "~> 1.12.1"},
+      {:mint, "~> 1.6.2"}
     ]
   end
 end
