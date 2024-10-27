@@ -1,4 +1,6 @@
 defmodule RiotDeveloperClient.ApiClient do
+  @moduledoc false
+
   def client do
     middleware = [
       {Tesla.Middleware.BaseUrl, base_url()},

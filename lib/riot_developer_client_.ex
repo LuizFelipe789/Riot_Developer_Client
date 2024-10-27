@@ -1,4 +1,6 @@
 defmodule RiotDeveloperClient do
+  @moduledoc false
+
   use Tesla
 
   import RiotDeveloperClient.ApiClient
