@@ -1,6 +1,14 @@
 # RiotDeveloperClient
 
+[![CI](https://github.com/LuizFelipe789/Riot_Developer_Client/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/LuizFelipe789/Riot_Developer_Client/actions/workflows/ci.yaml)
+
 **TODO: Add description**
+
+- ~Create Pipeline~
+- Add more call request
+- Create Handler module
+- Create Behaviours
+- Refactor the unit test
 
 ## Installation
 
