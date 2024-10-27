@@ -25,7 +25,8 @@ defmodule RiotDeveloperClient.MixProject do
     [
       {:jason, "~> 1.4"},
       {:tesla, "~> 1.12.1"},
-      {:mint, "~> 1.6.2"}
+      {:mint, "~> 1.6.2"},
+      {:credo, "~> 1.7", only: [:dev, :test]}
     ]
   end
 end
