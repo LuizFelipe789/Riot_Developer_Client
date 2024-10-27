@@ -8,7 +8,8 @@ defmodule RiotDeveloperClient.ApiClient do
       {Tesla.Middleware.JSON, engine: Jason, engine_opts: [keys: :atoms]}
     ]
 
-    Tesla.client(middleware, adapter())
+    Tesla.client(middleware, 
+    adapter())
   end
 
   defp adapter do
