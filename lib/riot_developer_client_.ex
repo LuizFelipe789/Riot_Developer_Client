@@ -6,7 +6,9 @@ defmodule RiotDeveloperClient do
   import RiotDeveloperClient.ApiClient
 
   def get_account_data_by_name_and_tag_name(name, tag_name) do
-    get(client(), "riot/account/v1/accounts/by-riot-id/#{name}/#{tag_name}")
+    url = URI.encode("riot/account/v1/accounts/by-riot-id/#{name}/#{tag_name}")
+
+    get(client(), url)
     |> handle_response()
   end
 
